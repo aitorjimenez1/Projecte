@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* ocupa toda la altura de la ventana */
+    background-color: white;
+    color: black;
+    /* Fuente: Funnel Sans */
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar */
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav{
+    background-color: rgb(209, 209, 209);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin-left: 70px;
+    transition: all 0.3s ease-out;
+}
+
+nav a:hover{
+    color: cornflowerblue;
+    letter-spacing: 1px;
+}
+
+.navlogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav img{
+    width: 70px;
+    height: auto;
+}
+
+#opcatual{
+    pointer-events: none;
+    color: slateblue;
+    font-weight: bold;
+    font-size: larger;
+}
+/* ------ */
+
+
+/* Footer */
+footer{
+    top: 0;
+    left: 0;
+    padding: 50px 100px;
+    color: white;
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redessociales{
+    display: flex;
+    gap: 50px;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+footer a:hover{
+    color: cornflowerblue;
+}
+/* ------ */
+
+
+/* Contenido de pagina */
+#contenidopag{
+    flex: 1;    /* ocupa todo el espacio disponible */
+    margin-top: 3.5%;
+}
+/* ------------------- */
