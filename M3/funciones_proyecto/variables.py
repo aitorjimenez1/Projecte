@@ -1,5 +1,8 @@
+
+game_context = {}
+
 characters = {
-    1:"Entrenador Naranja",
+    1:"Entrenador Pokémon Naranja",
     2:"Espadachín Sirius",
     3:"Estudiante Pepe"
 }
@@ -25,9 +28,9 @@ id_by_steps = {
     #    "answers_in_step": (tupla amb els ids de les opcions posibles en aquest pas),
     #    "Final_Step": 0 si no és un pas final, 1 si és un pas final},
 
-    1: {"Description": adventures[1]["descripcion_aventura"], "answers_in_step": (111,112), "Final_Step": 0},
+    1: {"Description": adventures[1]["descripcion_aventura"], "answers_in_step": (1011,1012), "Final_Step": 0},
     111: {"Description": "Decides no ir al laboratorio del profesor Pokémon, piensas que mejor adentrarte a la hierba alta y atrapar tu propio Pokémon. Experimentas el poder de los Pokémon y terminas muy mal herido. Para cuando alguien te encontró ya era muy tarde. FIN", "answers_in_step": (), "Final_Step": 1},
-    112: {"Description": "Decides ir al laboratorio del profesor Pokémon a elegir tu Pokémon inicial. Una vez hecho, tu autoproclamado rival (el hijo del profesor) te reta a un combate Pokémon.", "answers_in_step": (121,122), "Final_Step": 0},
+    112: {"Description": "Decides ir al laboratorio del profesor Pokémon a elegir tu Pokémon inicial. Una vez hecho, tu autoproclamado rival (el hijo del profesor) te reta a un combate Pokémon.", "answers_in_step": (1021,1022), "Final_Step": 0},
     121: {"Description": "Aceptas el desafío y tienes tu primer combate Pokémon. Acabas ganando, pero tu rival no se rinde y te jura que se hará más fuerte y te ganará.", "answers_in_step": (131,132), "Final_Step": 0},
     122: {"Description": "Rechazas el combate, el rival te llama aburrido y se va.", "answers_in_step": (131,132), "Final_Step": 0},
     131: {"Description": "Te vas directamente a desafiar a los líderes de gimnasio. Para conseguir las 8 medallas de gimnasio necesarios para participar en la Liga Pokémon", "answers_in_step": (1411), "Final_Step": 0},
@@ -43,9 +46,10 @@ idAnswers_ByStep_Adventure = {
     #    "NextStep_Adventure": id del seguent pas},
     (1011, 1): {"Description": "Ir a la hierba alta a atrapar tu propio Pokémon inicial", "Resolution_Anwer": "Te vas directo a la hierba alta", "NextStep_Adventure": 111},
     (1012, 1): {"Description": "Ir al laboratorio del profesor Pokémon", "Resolution_Anwer": "No haces una estupidez y te diriges al laboratorio", "NextStep_Adventure": 112},
-    (1021, 1): {"Description": "Aceptar", "Resolution_Anwer": "Empieza el combate", "NextStep_Adventure": 121}
+    (1021, 1): {"Description": "Aceptar", "Resolution_Anwer": "Empieza el combate", "NextStep_Adventure": 121},
+    (1022, 1): {"Description": "Rechazar", "Resolution_Anwer": "Rechazas el combate", "NextStep_Adventure": 122}
 }
 
 replayAdventures = {}
 
-print(id_by_steps[122]["Description"])
+#print(id_by_steps[122]["Description"])
