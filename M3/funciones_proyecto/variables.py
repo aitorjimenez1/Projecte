@@ -3,8 +3,7 @@ game_context = {}
 
 characters = {
     1:"Entrenador Pokémon Naranja",
-    2:"Espadachín Sirius",
-    3:"Estudiante Pepe"
+    2:"Estudiante Pepe"
 }
 
 adventures = {
