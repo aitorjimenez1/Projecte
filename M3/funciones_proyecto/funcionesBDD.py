@@ -9,7 +9,7 @@ def conectar_BDD():
             host="localhost",
             user="root",
             password="aws",
-            database="adventure_game",
+            database="choose_your_story",
             port=3306
         )
         print("Conectado a la BDD")

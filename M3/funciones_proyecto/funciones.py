@@ -83,11 +83,13 @@ def login():
 
 def create_user_nombre(nombre):
     nombre_solo_letras = nombre.replace(" ", "")
-    if nombre.count("  ") > 0 or len(nombre) > 20 or nombre_solo_letras.isalpha() == False:
+    if nombre.count("  ") > 0 or len(nombre) > 10 or len(nombre) < 6 or nombre_solo_letras.isalpha() == False:
         if nombre.count("  ") > 0:
             print("El nombre no puede tener 2 espacios seguidos")
-        if len(nombre) > 20:
-            print("El nombre es demasiado largo (max 20 letras)")
+        if len(nombre) > 10:
+            print("El nombre es demasiado largo (max 10 letras)")
+        if len(nombre) < 6:
+            print("El nombre es demasiado corto (minim 6 letras)")
         if nombre_solo_letras.isalpha() == False:
             print("El nombre solo puede contener letras")
         return ""

@@ -1,0 +1,5 @@
+USE choose_your_story;
+
+ALTER TABLE users
+MODIFY id_user INT UNSIGNED NOT NULL AUTO_INCREMENT,
+ADD PRIMARY KEY (id_user);
